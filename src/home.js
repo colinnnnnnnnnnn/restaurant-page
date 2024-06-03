@@ -1,8 +1,14 @@
-
-
 export function generateHome() {
     const content = document.querySelector('.content');
     content.innerHTML = '';
+
+    const homeBtn = document.getElementById('home');
+    const menuBtn = document.getElementById('menu');
+    const aboutBtn = document.getElementById('about');
+
+    homeBtn.addEventListener('click', () => {
+        homeBtn.style.backgroundColor = 'rgba(0, 0, 0, 0.6)';
+    })
 
     const slogan = document.createElement('div');
     slogan.innerText = 'Overpriced mediocre food - this is Mamaliga Bar';
