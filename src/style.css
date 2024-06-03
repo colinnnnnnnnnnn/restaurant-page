@@ -6,7 +6,7 @@ body {
     margin: 0;
     height: 100%;
     display: grid;
-    grid-template-columns: 1fr 20fr 1fr;
+    grid-template-columns: 5fr 16fr 5fr;
     grid-template-rows: 1fr 5fr 15fr 1fr;
 }
 
@@ -28,4 +28,33 @@ nav > button {
 .content {
     grid-row: 3;
     grid-column: 2;
+}
+
+.slogan {
+    font-size: 3rem;
+    font-style: italic;
+}
+
+.slogan + div {
+    font-size: 2rem;
+    margin: 0.5rem;
+}
+
+.reviews {
+    list-style-type: none;
+}
+
+.reviews > li {
+    margin: 2rem;
+    font-size: 1.5rem;
+}
+
+.reviews > li:nth-child(odd) {
+    display: flex;
+    justify-content: left;
+}
+
+.reviews > li:nth-child(even) {
+    display: flex;
+    justify-content: right;
 }
