@@ -13,6 +13,16 @@ body {
 header {
     grid-row: 2;
     grid-column: 2;
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+nav > button {
+    padding: 0.8rem 2rem;
 }
 
 .content {
